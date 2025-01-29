@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test:e2e": "npx playwright test tests/",
-    "test:e2e:dev": "npx playwright test tests/ --project=chromium --headed",
-    "test:e2e:smoke": "npx playwright test tests/ --grep @smoke --project=chromium --headed"
+    "test:e2e:headed": "npx playwright test tests/ --project=chromium --headed",
+    "test:dev": "ENV=dev npx playwright test tests/",
+    "test:prod": "ENV=prod npx playwright test tests/"
   },
   "keywords": [],
   "author": "",
